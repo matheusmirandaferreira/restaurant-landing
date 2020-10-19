@@ -14,7 +14,7 @@ body {
     /* background-image: url('../img/wooden-background/3993.jpg'); */
     background-image: url('../img/backgrounds/mesaBG.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;
     color: #ffffff;
     width: 100vw;
     /* darck / ligth mode */
@@ -181,12 +181,6 @@ header .cad-log a:hover {
 /* MENU TOGGLE */
 
 /* Important styles */
-
-@media(max-height: 650px) {
-    body {
-        background: #111010;
-    }
-}
 
 @media(max-width: 849px) {
     #toggle div {
