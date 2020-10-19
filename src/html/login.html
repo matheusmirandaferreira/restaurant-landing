@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/partials/form.css">
+
+  <link rel="shortcut icon" href="/img/icons/icon.png" type="image/svg" />
+  
+  <title>Login | Xamifood</title>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">
+      <a href="/">
+        <img src="/img/icons/nav-icon.png">
+      </a>
+    </div>
+    <div id="toggle">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+
+    <nav class="menu">
+      <a href="/home">Home</a>
+      <a href="restaurantes">Restaurantes</a>
+      <a href="cardapio">Cardápio</a>
+      <!-- <a href="receitas">Receitas</a> -->
+      <a href="lives">Lives</a>
+      <!-- <a href="sobre">Sobre</a> -->
+      <a href="contato">Fale Conosco</a>
+
+      <div class="cad-log">
+        <a class="destaque" href="/">Cadastre-se</a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="container">
+    <main>
+      <form action="/auth/authenticate" id="enter" method="POST">
+        <fieldset>
+          <legend>Seus dados</legend>
+
+          <div class="input-block">
+            <img src="/img/icons/email.svg">
+            <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+          </div>
+          <div class="input-block">
+            <img src="/img/icons/key.svg">
+            <input type="password" name="password" id="password" placeholder="Insira sua senha" required></input>
+          </div>
+
+          <small> <a href="forgot-password"> Esqueci minha senha...</a> </small>
+          
+        </fieldset>
+      </form>
+      <footer>
+        <p>
+          <img src="/img/icons/warning.svg" alt="Aviso importante">Importante! <br>
+          Preencha todos os dados
+        </p>
+        <button type="submit" form="enter">Logar</button>
+      </footer>
+    </main>
+ </div>
+
+    <footer class="endpage">
+      <div class="redes-sociais">
+        <p> Nos siga também</p>
+        <a href="#"><img src="/img/icons/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="/img/icons/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="/img/icons/facebook.png" alt="Facebook"></a>
+      </div>
+      <p>
+        Direitos reservados, 2020. Xagal & Miranha.
+      </p>
+    </footer>
+    <!-- Menu toggle / scipt -->
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  
+    <script src="/scripts/toggle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/partials/restaurantes.css">
+
+  <link rel="shortcut icon" href="/img/icons/icon.png" type="image/x-icon">
+  <title>Restaurantes | Xamifood</title>
+
+</head>
+
+<body id="show-restaurants">
+  <header class="cabecalho">
+    <div class="logo">
+      <a href="/home">
+        <img src="/img/icons/nav-icon.png">
+      </a>
+    </div>
+    <div id="toggle">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+
+    <nav class="menu">
+      <a class="menu-item" href="/home">Home</a>
+      <a class="menu-item selected" href="/restaurantes">Restaurantes</a>
+      <a class="menu-item" href="/cardapio">Cardápio</a>
+      <a class="menu-item" href="/lives">Lives</a>
+      <a class="menu-item" href="/contato">Fale Conosco</a>
+      
+      <div class="welcome">
+        Bem-vindo {{ name }}
+      </div>
+    </nav>
+
+  </header>
+
+  <div id="restaurantes">
+
+    <div id="LaVieenFood" class="card">
+      <header>
+        <img src="/img/Restaurants/lavienFood.png" alt="La Vie en Food">
+        <div class="local">
+          Estamos localizados na
+          <strong>
+            R. Sen. Fonseca, 794 - Centro, Jundiaí - SP, 13201-017
+          </strong>
+        </div>
+      </header>
+      <div class="card-conteudo">
+        <h2> La Vie en Food </h2>
+        <p class="card-descricao">
+          Restaurante de origem francesa, com as mais tipicas refeições, venha experimentar.
+        </p>
+      </div>
+      <footer>
+        <a class="button" href="#">Saiba mais</a>
+      </footer>
+    </div>
+
+    <div id="parkfood" class="card">
+      <header>
+        <img src="/img/Restaurants/parkFood.png" alt="Park Food">
+        <div class="local"> Estamos localizados na
+          <strong>
+            Av. Giovanni Gronchi, 05651-002 - Morumbi, São Paulo - SP
+          </strong>
+        </div>
+      </header>
+      <div class="card-conteudo">
+        <h2> Park Food </h2>
+        <p class="card-descricao">
+          Estamos sempre pensando na sua comida e no seu conforto, venha se divertir com a
+          gente.
+        </p>
+      </div>
+      <footer>
+        <a class="button" href="#">Saiba mais</a>
+      </footer>
+    </div>
+
+    <div id="parkfood" class="card">
+      <header>
+        <img src="/img/Restaurants/liveFoods.jpg" alt="live Foods">
+        <div class="local"> Estamos localizados na
+          <strong>
+            Av. 9 de Julho, 38 - Jundiaí Shopping, Jundiaí - SP
+          </strong>
+        </div>
+      </header>
+      <div class="card-conteudo">
+        <h2> Live Food </h2>
+        <p class="card-descricao">
+          Estamos sempre pensando na sua comida e no seu conforto, venha se divertir com a
+          gente.
+        </p>
+      </div>
+      <footer>
+        <a class="button" href="#">Saiba mais</a>
+      </footer>
+    </div>
+
+  </div>
+
+  <footer class="endpage">
+    <div class="redes-sociais">
+      <p> Nos siga também</p>
+      <a href="#"><img src="/img/icons/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="/img/icons/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="/img/icons/facebook.png" alt="Facebook"></a>
+    </div>
+    <p>
+      Direitos reservados, 2020. Xagal & Miranha.
+    </p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <!-- menu toggle -->
+  <script src="/scripts/toggle.js"></script>
+
+</body>
+
+</html>
