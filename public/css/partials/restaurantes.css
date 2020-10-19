@@ -1,0 +1,96 @@
+#restaurantes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#restaurantes .card{
+  height: 330px;
+  width: 260px;
+  background-color: #3d3a3a;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px;
+  margin: 10vh auto;
+  box-shadow: 5px 4px 10px 0px rgba(49, 45, 45, 0.6);
+  border-radius: .8rem;
+  overflow: hidden;
+}
+
+#restaurantes .card header {
+  position: relative;
+  display: flex;
+}
+
+#restaurantes .card header .local {
+  height: 100%;
+  background-color: rgba(49, 45, 45, 0.7);
+  position: absolute;
+  opacity: 0;
+  transition: .8s;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#restaurantes .card header .local:hover {
+  opacity: 1;
+}
+
+.card-conteudo h2 {
+  margin: 0;
+  margin-top: .8rem;
+}
+
+.card .card-conteudo p {
+  margin: .5rem 0;
+}
+
+.card-descricao{
+  font-size: 12pt;
+}
+
+.card img{
+  height: 170px;
+  width: 100%;
+  border-radius: .8rem;
+}
+
+#restaurantes .card footer {
+  border-top: solid 1px rgb(104, 102, 102);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#restaurantes .card footer .button { 
+  color: white;
+  
+  padding: 10px;
+  margin: 5px;
+
+  background-color: red;
+  border-radius: 0.8rem;
+  transition: 0.4s;
+}
+
+#restaurantes .card footer .button:hover {
+  color: rgb(219, 210, 210);
+  background-color: rgb(216, 16, 16);
+}
+
+@media(max-width: 900px) {
+  #show-restaurants .endpage{
+    position: relative;
+  }
+}
+
+@media(max-width: 600px) {
+  #restaurantes .card footer .button { 
+    margin-top: 10px;
+  }
+}

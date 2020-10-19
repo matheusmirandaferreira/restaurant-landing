@@ -1,0 +1,145 @@
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 89vh;
+}
+
+.slide .saudacoes {
+    width: 50%;
+    height: 150%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 0 50% 50% 0;
+}
+
+.slide img {
+    position: absolute;
+    margin-left: 20%;
+    height: 585px;
+    width: 1155px;
+    z-index: -1;
+}
+
+.food-item {
+    border-radius: .8rem;
+    margin-top: 2.4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.food-item header {
+    margin-left: 6.4rem;
+    width: 11rem;
+    height: 11rem;
+    position: relative;
+}
+
+.food-item header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.food-item header div {
+    position: absolute;
+    transition: 0.3s;
+}
+
+.food-item header .drop-img {
+    left: 30%;
+}
+
+.food-item header img {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    background-color: red;
+    transition: 0.3s;
+}
+
+.food-item header div:hover {
+    z-index: 1;
+}
+
+.food-item header img:hover {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.texto {
+    width: 60%;
+    text-align: justify;
+    background-color: transparent;
+}
+
+.texto p {
+    padding: 0 calc(10% - 15px);
+    margin: 3.2rem;
+}
+
+.food-item footer a .contact {
+    font-weight: 900;
+    padding: .8rem;
+    border-radius: .8rem;
+    color: red;
+    background-color: #fff5ee;
+    transition: 0.4s;
+}
+
+.food-item footer a .contact:hover {
+    background-color: #dbd5d1;
+}
+
+@media(max-width: 1120px) {
+    .food-item footer a .contact {
+        width: 70px;
+    }
+}
+
+@media(max-width: 904px) {
+    .slide img {
+        display: none;
+    }
+    .slide .saudacoes {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        opacity: 0.7;
+        color: #000000;
+        height: 60vh;
+        font-size: 1.5rem;
+        width: 100%;
+        height: 90vh;
+        border-radius: 0em;
+    }
+    .food-item {
+        flex-direction: column;
+    }
+    .food-item header {
+        width: 100%;
+        height: 50px;
+        margin: 0;
+    }
+    .food-item header img {
+        display: none;
+    }
+    .texto {
+        width: 80%;
+    }
+    .texto p {
+        padding: 0px;
+        margin: 0px;
+    }
+    .food-item footer a .contact {
+        width: auto;
+    }
+}

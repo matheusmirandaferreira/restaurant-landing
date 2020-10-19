@@ -1,0 +1,59 @@
+#live-page {
+    background-color: #84ee84;
+    background-image: url('../../img/Restaurants/cozinhaXamifood.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#live-page .lives-explorer {
+    position: absolute;
+    top: -29%;
+    left: 45%;
+    background-color: rgb(245, 245, 238);
+    color: black;
+    border-radius: 200rem;
+    height: 150%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#live-page .lives-explorer h1, #live-page .lives-explorer .descricao {
+    text-align: center;
+    margin-right: 40%;
+    padding: 0 9%;
+}
+
+#live-page .lives-explorer .descricao {
+    font-size: 1.5rem;
+}
+
+.endpage {
+    padding-top: 3.2rem;
+}
+
+@media(max-width: 700px) {
+    #live-page {
+        background: none;
+        width: 100vw;
+    }
+    #live-page .lives-explorer {
+        position: initial;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #live-page .lives-explorer h1, 
+    #live-page .lives-explorer .descricao {
+        text-align: center;
+        margin-right: 0;
+        padding: 0 9%;
+    }
+}
