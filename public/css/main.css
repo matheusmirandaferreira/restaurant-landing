@@ -5,18 +5,17 @@
 }
 
 * {
-    overflow-x: hidden;
     font-family: 'Trebuchet MS';
 }
 
 body {
     margin: 0;
-    /* background-image: url('../img/wooden-background/3993.jpg'); */
     background-image: url('../img/backgrounds/mesaBG.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
     /* darck / ligth mode */
     /* filter: invert(100%); */
 }
