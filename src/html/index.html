@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+    <link rel="stylesheet" href="/css/partials/home-page.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 
-  <link rel="stylesheet" href="/css/partials/home-page.css">
-  <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/img/icons/icon.png" type="image/svg" />
+  </head>
 
-  <link rel="shortcut icon" href="/img/icons/icon.png" type="image/svg" />
-</head>
-
-<body>
-  <header class="cabecalho">
-    <div class="logo">
-      <a href="/home">
-        <img src="/img/icons/nav-icon.png">
-      </a>
-    </div>
-    <div id="toggle">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
-    </div>
-
-    <nav class="menu">
-      <a class="menu-item selected" href="/home">Home</a>
-      <a class="menu-item" href="/restaurantes">Restaurantes</a>
-      <a class="menu-item" href="/cardapio">Cardápio</a>
-      <a class="menu-item" href="/lives">Lives</a>
-      <a class="menu-item" href="/contato">Fale Conosco</a>
-
-      <div class="welcome">
-        Bem-vindo <strong> {{'userName'}} </strong>
+  <body>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="/home">
+          <img src="/img/icons/nav-icon.png" />
+        </a>
+      </div>
+      <div id="toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
       </div>
 
-    </nav>
-  </header>
+      <nav class="menu">
+        <a class="menu-item selected" href="/home">Home</a>
+        <a class="menu-item" href="/restaurantes">Restaurantes</a>
+        <a class="menu-item" href="/cardapio">Cardápio</a>
+        <a class="menu-item" href="/lives">Lives</a>
+        <a class="menu-item" href="/contato">Fale Conosco</a>
 
-  <div class="slide">
-    <div class="saudacoes">
-      <h1> Bem vindo ao XamiFood</h1>
-    </div>
-    <img src="/img/Restaurants/cozinhaXamifood.jpg" alt="Logo" title="XaMiFood Logo">
-  </div>
-
-  <main class="food-item">
-    <header>
-      <h1> Sobre Nós </h1>
-      <div class="drop-img">
-        <img src="/img/miranda.jpeg" alt="Miranda">
-      </div>
-      <div class="img-xagal">
-        <img src="/img/xagal.jpeg" alt="Xagal">
-      </div>
-
+        <div id="welcome" class="welcome">Bem-vindo <strong></strong></div>
+      </nav>
     </header>
-    <div class="texto">
-      <p> Olá, somos a equipe XamiFood, uma rede de restaurantes que sempre preza pela
-        satisfação do nosso cliente. Criado pela dupla de amigos Matheus e Tiago, que
-        adoravam cozinhar e começaram vendendo suas deliciosas receitas em um simples
-        salão, hoje já possuímos 3 restaurantes físicos, sendo dois em Jundiaí e um
-        em São Paulo, além do sistema de delivery que pode ser feito aqui pelo site
-        ou pelo aplicativo. Venha nos conhecer, garanto que não irá se arrepender!
-      </p>
+
+    <div class="slide">
+      <div class="saudacoes">
+        <h1>Bem vindo ao XamiFood</h1>
+      </div>
+      <img
+        src="/img/Restaurants/cozinhaXamifood.jpg"
+        alt="Logo"
+        title="XaMiFood Logo"
+      />
     </div>
-    <footer>
-      <a href="/contato">
-        <p class="contact">Entre em contato.</p>
-      </a>
+
+    <main class="food-item">
+      <header>
+        <h1>Sobre Nós</h1>
+        <div class="drop-img">
+          <img src="/img/miranda.jpeg" alt="Miranda" />
+        </div>
+        <div class="img-xagal">
+          <img src="/img/xagal.jpeg" alt="Xagal" />
+        </div>
+      </header>
+      <div class="texto">
+        <p>
+          Olá, somos a equipe XamiFood, uma rede de restaurantes que sempre
+          preza pela satisfação do nosso cliente. Criado pela dupla de amigos
+          Matheus e Tiago, que adoravam cozinhar e começaram vendendo suas
+          deliciosas receitas em um simples salão, hoje já possuímos 3
+          restaurantes físicos, sendo dois em Jundiaí e um em São Paulo, além do
+          sistema de delivery que pode ser feito aqui pelo site ou pelo
+          aplicativo. Venha nos conhecer, garanto que não irá se arrepender!
+        </p>
+      </div>
+      <footer>
+        <a href="/contato">
+          <p class="contact">Entre em contato.</p>
+        </a>
+      </footer>
+    </main>
+
+    <!-- botão flutuante -->
+
+    <a href="#" id="subir">
+      <div class="box-float">
+        &#8682;
+        <p class="sub">Veja nosso cardápio</p>
+      </div>
+    </a>
+
+    <footer class="endpage">
+      <div class="redes-sociais">
+        <p>Nos siga também</p>
+        <a href="#"><img src="/img/icons/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="/img/icons/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="/img/icons/facebook.png" alt="Facebook" /></a>
+      </div>
+      <p>Direitos reservados, 2020. Xagal & Miranha.</p>
     </footer>
 
-  </main>
+    <script>
+      const userName = localStorage.getItem("userName");
+      const div = document.querySelector("#welcome strong");
+      div.append(userName)
+    </script>
 
-  <!-- botão flutuante -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-  <a href="#" id="subir">
-    <div class="box-float">
-      &#8682;
-      <p class="sub">Veja nosso cardápio</p>
-    </div>
-  </a>
+    <!-- Menu toggle -->
+    <script src="/scripts/toggle.js"></script>
 
-  <footer class="endpage">
-    <div class="redes-sociais">
-      <p> Nos siga também</p>
-      <a href="#"><img src="/img/icons/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="/img/icons/twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="/img/icons/facebook.png" alt="Facebook"></a>
-    </div>
-    <p>
-      Direitos reservados, 2020. Xagal & Miranha.
-    </p>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-  <!-- Menu toggle -->
-  <script src="/scripts/toggle.js"></script>
-
-
-  <!-- Botão Flutuante(topo da pagina) -->
-  <script src="/scripts/scrolltop.js"></script>
-
-</body>
-
+    <!-- Botão Flutuante(topo da pagina) -->
+    <script src="/scripts/scrolltop.js"></script>
+  </body>
 </html>

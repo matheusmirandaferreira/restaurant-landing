@@ -14,6 +14,9 @@ const {
     login,
     forgotPassword,
     resetPassword,
+    laVieEnFood,
+    parkFood,
+    liveFoods,
  } = require('./pages');
  
 nunjucks.configure('src/html', {
@@ -35,6 +38,9 @@ app.use(express.json())
 .get('/contato', contato)
 .get('/forgot-password', forgotPassword)
 .get('/reset-password', resetPassword)
+.get('/restaurants/lavieenfood', laVieEnFood)
+.get('/restaurants/parkfood', parkFood)
+.get('/restaurants/livefoods', liveFoods)
 
 require('./app/controllers/index')(app)
 

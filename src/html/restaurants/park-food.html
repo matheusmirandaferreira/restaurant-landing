@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La vie en Food | Xamifood</title>
+
+    <!-- Links de estilo do Leaflet -->
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""
+  />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""
+  ></script>  
+
+  <!-- Estilos internos -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/partials/carrossel.css" />
+    <link rel="stylesheet" href="/css/partials/restaurante.css" />
+
+    <link rel="shortcut icon" href="/img/icons/icon.png" type="image/svg" />
+  </head>
+  <body>
+    <div id="container">
+      <aside>
+        <div class="slide">
+          <div class="pic-ctn">
+            <img src="/img/pratos/patros.jpg" alt="Pratos" class="pic" />
+            <img src="/img/pratos/prato2.jpg" alt="Pratos" class="pic" />
+            <img src="/img/pratos/prato3.jpg" alt="Pratos" class="pic" />
+            <img src="/img/pratos/prato4.jpg" alt="Pratos" class="pic" />
+          </div>
+        </div>
+        <div class="location">
+          <div id="mapid"></div>
+          <span data-lat="-23.6061417" data-lng="-46.7274884"></span>
+          <a
+            target="_blank"
+            href="https://maps.google.com/mobile?q=-23.6061417,-46.7274884&z=15"
+            ><h2>Venha nos visitar</h2></a
+          >
+        </div>
+      </aside>
+
+      <div id="receitas">
+        <header>
+          <h1>Melhores receitas</h1>
+          <img src="/img/pratos/patros.jpg" alt="Pratos Xamifood" />
+        </header>
+
+        <div class="ingredientes">
+          <h2>Ingredientes</h2>
+          <ul>
+            <li>Trigo</li>
+            <li>fermento</li>
+            <li>óleo</li>
+            <li>ovo</li>
+          </ul>
+        </div>
+
+        <div class="modo-de-preparo">
+          <h2>Modo de preparo</h2>
+          <p>Aqui estará a descrição de como preparar o prato.</p>
+          <p>Aqui estará a descrição de como preparar o prato.</p>
+          <p>Aqui estará a descrição de como preparar o prato.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="comentarios">
+      <div>
+        <header>
+          <img src="/img/miranda.jpeg" alt="User name" />
+          <span> Matheus de Miranda </span>
+        </header>
+        <div class="comentario">
+          <p>
+            Usuarios cadastrados podem enviar comentarios pela nossa plataforma
+            e postamos seus resultados aqui. =)
+          </p>
+        </div>
+      </div>
+      <div class="absolute">
+        <header>
+          <img src="/img/miranda.jpeg" alt="User name" />
+          <span> Matheus de Miranda </span>
+        </header>
+        <div class="comentario">
+          <p>
+            Usuarios cadastrados podem enviar comentarios pela nossa plataforma
+            e postamos seus resultados aqui. =)
+          </p>
+        </div>
+      </div>
+      <div>
+        <header>
+          <img src="/img/miranda.jpeg" alt="User name" />
+          <span> Matheus de Miranda </span>
+        </header>
+        <div class="comentario">
+          <p>
+            Usuarios cadastrados podem enviar comentarios pela nossa plataforma
+            e postamos seus resultados aqui. =)
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Script de configuração do mapa -->
+    <script type="text/javascript" src="/scripts/maps.js"></script>
+  </body>
+</html>

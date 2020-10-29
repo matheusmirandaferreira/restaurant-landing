@@ -34,6 +34,18 @@ function resetPassword(req, res) {
     return res.render('reset_password.html')
 }
 
+function laVieEnFood(req, res) {
+    return res.render('restaurants/lavieen-food.html')
+}
+
+function parkFood(req, res) {
+    return res.render('restaurants/park-food.html')
+}
+
+function liveFoods(req, res) {
+    return res.render('restaurants/live-foods.html')
+}
+
 module.exports = {
     homePage,
     restaurantes,
@@ -44,4 +56,7 @@ module.exports = {
     login,
     forgotPassword,
     resetPassword,
+    laVieEnFood,
+    parkFood,
+    liveFoods,
 }
