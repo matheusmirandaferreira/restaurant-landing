@@ -55,10 +55,23 @@ fieldset .input-block input {
     width: 100%;
     margin-left: 10px;
     font-size: large;
+    background-color: transparent;
 }
 
 fieldset .input-block input:focus {
-    border-bottom: 2px solid orchid;
+    border-bottom: 2px solid red;
+    animation: left 1s;
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 fieldset small {
@@ -99,6 +112,9 @@ main footer {
 
     background: rgb(235, 21, 21);
     margin-top: 3.2rem;
+
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
 }
 
 main footer p img {
