@@ -33,8 +33,9 @@ a {
 .cabecalho {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
     height: auto;
+    padding: 0 20px;
     font-size: 1.3em;
     background-color: #000000;
 }
@@ -55,8 +56,6 @@ a {
 }
 
 .logo img {
-    margin-right: 6.4rem;
-    margin-left: .8rem;
     width: auto;
     height: 70px;
 }
@@ -77,20 +76,10 @@ a {
 
 .cad-log {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     align-items: center;
     width: 220px;
     right: 0;
-}
-
-.welcome {
-    position: absolute;
-    width: auto;
-    right: 20px;
-}
-
-.welcome strong {
-    color: cyan;
 }
 
 .cad-log .destaque {
@@ -104,6 +93,10 @@ a {
 header .cad-log a:hover {
     text-decoration: underline;
     color: #ffffff;
+}
+
+.welcome strong {
+    color: cyan;
 }
 
 #toggle {
