@@ -15,7 +15,7 @@
   <header class="cabecalho">
     <div class="logo">
       <a href="/home">
-        <img src="/img/icons/nav-icon.png">
+        <img src="/img/icons/nav-icon.png" />
       </a>
     </div>
     <div id="toggle">
@@ -30,12 +30,9 @@
       <a class="menu-item" href="/cardapio">Cardápio</a>
       <a class="menu-item selected" href="/lives">Lives</a>
       <a class="menu-item" href="/contato">Fale Conosco</a>
-      
-      <div class="welcome">
-        Hello user {{ name }}
-      </div>
     </nav>
-
+    
+    <div id="welcome" class="welcome">Bem-vindo <strong></strong></div>
   </header>
 
 <div id="live-page">
@@ -63,6 +60,8 @@
     Direitos reservados, 2020. Xagal & Miranha.
   </p>
 </footer>
+<script src="/scripts/storage.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 <!-- Menu toggle -->
