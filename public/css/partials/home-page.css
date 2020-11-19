@@ -84,23 +84,21 @@
     margin: 3.2rem;
 }
 
-.food-item footer a .contact {
+.food-item footer a.contact {
     font-weight: 900;
     padding: .8rem;
     border-radius: .8rem;
     color: red;
     background-color: #fff5ee;
     transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
 }
 
-.food-item footer a .contact:hover {
+.food-item footer a.contact:hover {
     background-color: #dbd5d1;
-}
-
-@media(max-width: 1120px) {
-    .food-item footer a .contact {
-        width: 70px;
-    }
 }
 
 @media(max-width: 904px) {
@@ -139,7 +137,7 @@
         padding: 0px;
         margin: 0px;
     }
-    .food-item footer a .contact {
+    .food-item footer a.contact {
         width: auto;
     }
 }
