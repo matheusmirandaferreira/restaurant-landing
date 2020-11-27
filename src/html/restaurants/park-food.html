@@ -28,6 +28,28 @@
     <link rel="shortcut icon" href="/img/icons/icon.png" type="image/svg" />
   </head>
   <body>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="/home">
+          <img src="/img/icons/nav-icon.png" />
+        </a>
+      </div>
+      <div id="toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+
+      <nav class="menu">
+        <a class="menu-item" href="/home">Home</a>
+        <a class="menu-item selected" href="/restaurantes">Restaurantes</a>
+        <a class="menu-item" href="/cardapio">Cardápio</a>
+        <a class="menu-item" href="/lives">Lives</a>
+        <a class="menu-item" href="/contato">Fale Conosco</a>
+      </nav>
+      
+      <div id="welcome" class="welcome">Bem-vindo <strong></strong></div>
+    </header>
     <div id="container">
       <aside>
         <div class="slide">
@@ -111,7 +133,11 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <!-- Script de configuração do mapa -->
     <script type="text/javascript" src="/scripts/maps.js"></script>
+    <script type="text/javascript" src="/scripts/storage.js"></script>
+    <script type="text/javascript" src="/scripts/toggle.js"></script>
+
   </body>
 </html>
