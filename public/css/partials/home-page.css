@@ -88,7 +88,7 @@
     font-weight: 900;
     padding: .8rem;
     border-radius: .8rem;
-    color: red;
+    color: #4caf50;
     background-color: #fff5ee;
     transition: 0.4s;
     display: flex;
@@ -132,12 +132,13 @@
     }
     .texto {
         width: 80%;
+        margin: 2.4rem 0;
     }
     .texto p {
         padding: 0px;
         margin: 0px;
     }
     .food-item footer a.contact {
-        width: auto;
+        margin-bottom: 2.4rem;
     }
 }

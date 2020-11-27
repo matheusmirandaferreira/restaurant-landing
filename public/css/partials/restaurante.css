@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.cabecalho {
+  background-color: #161717;
+}
+
 #container {
   width: 100vw;
   display: flex;
