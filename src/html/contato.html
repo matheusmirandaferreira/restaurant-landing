@@ -34,7 +34,7 @@
       <a class="menu-item selected" href="/contato">Fale Conosco</a>
     </nav>
     
-    <div id="welcome" class="welcome">Bem-vindo <strong></strong></div>
+    <div id="welcome" class="welcome"><k>Bem-vindo</k> <strong></strong></div>
   </header>
 
   <div id="conteudo">
@@ -51,13 +51,22 @@
         <textarea name="texto" name="sugest" placeholder="Digite Aqui!!!" required></textarea>
       </form>
       <footer>
-        Agradeçemos sua colaboração!
+        <k>Agradeçemos sua colaboração!</k>
         <a href="mailto:ohhhmiranha@gmail.com" form="text" type="submit" class="dados"> Enviar </a>
       </footer>
     </main>
 
 
   </div>
+
+  <aside>
+    <button class="idioma" onclick="traduzirContato()">
+      <img src="/img/icons/eua.svg" alt="Flag" />
+    </button>
+    <button class="idioma" onclick="destraduzirContato()">
+      <img src="/img/icons/brasil.svg" alt="Bandeira" />
+    </button>
+  </aside>
 
   <footer class="endpage">
     <div class="redes-sociais">
@@ -71,6 +80,9 @@
     </p>
   </footer>
   <!-- Menu toggle / scipt -->
+
+  <script src="/scripts/tradutor.js"></script>
+
   <script src="/scripts/storage.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

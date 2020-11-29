@@ -84,6 +84,10 @@
     margin: 3.2rem;
 }
 
+.food-item footer a img {
+    margin-right: 5px;
+}
+
 .food-item footer a.contact {
     font-weight: 900;
     padding: .8rem;
@@ -94,7 +98,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 160px;
+    width: max-content;
 }
 
 .food-item footer a.contact:hover {

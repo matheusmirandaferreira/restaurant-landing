@@ -34,7 +34,7 @@
       <a class="menu-item" href="/contato">Fale Conosco</a>
     </nav>
     
-    <div id="welcome" class="welcome">Bem-vindo <strong></strong></div>
+    <div id="welcome" class="welcome"><k>Bem-vindo</k> <strong></strong></div>
   </header>
 
   <div id="restaurantes">
@@ -72,8 +72,7 @@
       <div class="card-conteudo">
         <h2> Park Food </h2>
         <p class="card-descricao">
-          Estamos sempre pensando na sua comida e no seu conforto, venha se divertir com a
-          gente.
+          Estamos sempre pensando na sua comida e no seu conforto, venha se divertir com a gente.
         </p>
       </div>
       <footer>
@@ -93,8 +92,7 @@
       <div class="card-conteudo">
         <h2> Live Food </h2>
         <p class="card-descricao">
-          Estamos sempre pensando na sua comida e no seu conforto, venha se divertir com a
-          gente.
+          Cuidamos sempre da sua comida e do seu bem estar, venha nos conhecer e se divertir.
         </p>
       </div>
       <footer>
@@ -103,6 +101,15 @@
     </div>
 
   </div>
+
+  <aside>
+    <button class="idioma" onclick="traduzirRestaurantes()">
+      <img src="/img/icons/eua.svg" alt="Flag" />
+    </button>
+    <button class="idioma" onclick="destraduzirRestaurantes()">
+      <img src="/img/icons/brasil.svg" alt="Bandeira" />
+    </button>
+  </aside>
 
   <footer class="endpage">
     <div class="redes-sociais">
@@ -115,6 +122,8 @@
       Direitos reservados, 2020. Xagal & Miranha.
     </p>
   </footer>
+  
+  <script src="/scripts/tradutor.js"></script>
   
   <script src="/scripts/storage.js"></script>
 

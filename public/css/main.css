@@ -120,6 +120,45 @@ header .cad-log a:hover {
     cursor: pointer;
 }
 
+aside {
+    position: fixed;
+    right: 0;
+    top: 45%;
+    
+    height: 70px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+aside:hover {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+aside .idioma {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+
+    background: none;
+    width: 30px;
+    height: 30px;
+    transition: 0.2s;
+}
+
+aside .idioma:focus {
+    width: 35px;
+    height: 35px;
+}
+
 /* Rodapé */
 
 .box-float {

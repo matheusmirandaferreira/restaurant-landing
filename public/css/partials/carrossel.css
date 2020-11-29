@@ -67,6 +67,15 @@ img:nth-child(5) {
     z-index: 1;
 }
 
+.float div {
+    box-sizing: border-box;
+}
+
+.float div img {
+    width: 50px;
+    height: auto;
+}
+
 .pic-ctn .float div {
     text-align: center;
     width: 32.3%;

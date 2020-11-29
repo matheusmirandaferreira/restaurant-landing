@@ -35,7 +35,7 @@
       <a class="menu-item" href="/contato">Fale Conosco</a>
     </nav>
     
-    <div id="welcome" class="welcome">Bem-vindo <strong></strong></div>
+    <div id="welcome" class="welcome"><k>Bem-vindo</k> <strong></strong></div>
   </header>
 
   <div class="pic-ctn">
@@ -44,15 +44,15 @@
     <img src="/img/pratos/prato3.jpg" alt="Pratos" class="pic">
     <img src="/img/pratos/prato4.jpg" alt="Pratos" class="pic">
 
-    <div class="float">
+    <div class="float"> 
       <div>
-        Produtos avaliados
+        <img src="/img/icons/selo1.svg" alt="Produtos avaliados">
       </div>
       <div>
-        Serviços de entrega
+        <img src="/img/icons/selo2.svg" alt="Serviços de entrega">
       </div>
       <div>
-        Os melhores sabores 
+        <img src="/img/icons/selo3.svg" alt="Os melhores sabores">
       </div>
     </div>
     
@@ -99,6 +99,15 @@
 
   </div>
 
+  <aside>
+    <button class="idioma" onclick="traduzirMenu()">
+      <img src="/img/icons/eua.svg" alt="Flag" />
+    </button>
+    <button class="idioma" onclick="destraduzirMenu()">
+      <img src="/img/icons/brasil.svg" alt="Bandeira" />
+    </button>
+  </aside>
+
   <!-- toggle -->
 
   <a href="#" id="subir">
@@ -121,6 +130,8 @@
   </footer>
 
   <!-- script -->
+  <script src="/scripts/tradutor.js"></script>
+  
   <script src="/scripts/storage.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
