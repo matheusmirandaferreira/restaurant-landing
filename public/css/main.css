@@ -120,7 +120,7 @@ header .cad-log a:hover {
     cursor: pointer;
 }
 
-aside {
+#mudaIdioma {
     position: fixed;
     right: 0;
     top: 45%;
@@ -137,12 +137,12 @@ aside {
     transition: 0.2s;
 }
 
-aside:hover {
+#mudaIdioma:hover {
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
 }
 
-aside .idioma {
+#mudaIdioma .idioma {
     margin: 0;
     padding: 0;
     border: none;
@@ -154,7 +154,7 @@ aside .idioma {
     transition: 0.2s;
 }
 
-aside .idioma:focus {
+#mudaIdioma .idioma:focus {
     width: 35px;
     height: 35px;
 }
@@ -204,8 +204,6 @@ aside .idioma:focus {
     font-family: 'Arial black';
     color: #fff;
 }
-
-/* __________________________________________ */
 
 /* __________________________________________ */
 
